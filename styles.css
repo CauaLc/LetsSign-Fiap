@@ -1,0 +1,17 @@
+
+body { --bs-body-font-family: 'Inter'; }
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif; !important;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #4EFF71;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #45D261, #4EFF71);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #45D261, #4EFF71)
+}
