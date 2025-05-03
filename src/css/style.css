@@ -1,26 +1,70 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  }
-  
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #4EFF71;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #45D261, #4EFF71);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #45D261, #4EFF71)
+}
+
+
+#draw-area {
+  width: 100%;
+  max-width: 800px; /* Largura máxima */
+  aspect-ratio: 3/2; /* Proporção 3:2 (ajuste conforme necessidade) */
+  margin: 0 auto;
+  border: 2px solid #C2C2C2;
+  border-radius: 10px;
+  position: relative;
+  touch-action: none; /* Importante para mobile */
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block; /* Remove espaços extras */
+}
+
+@media (min-width: 768px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
-  .is-invalid {
-    border-color: #dc3545 !important;
+  .container {
+    max-width: 800px;
   }
-  
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 3rem;
-    }
-  
-    .container {
-      max-width: 800px;
-    }
-  
-    img {
-      max-width: 400px;
-    }
+
+  img {
+    max-width: 400px;
   }
-  
+
+  #draw-area {
+    width: 90%; /* Ocupa 90% da tela em dispositivos móveis */
+    max-width: 400px; /* Largura máxima menor para mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  #draw-area {
+    width: 85%;
+    max-width: 350px;
+  }
+}
