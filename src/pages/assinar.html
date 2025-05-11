@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lets Sign – Contrato de Aluguel</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Seu CSS customizado -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+      <div class="container-sm mx-auto" style="max-width: 700px">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../img/Logo.svg" height="32" alt="Lets Sign" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#suporte">Suporte</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container-sm mx-auto py-5" style="max-width: 480px">
+      <!-- Cabeçalho + botões -->
+      <section class="contract-header mb-4 text-center">
+        <h1>Contrato de Aluguel</h1>
+        <div
+          class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center align-items-md-start mt-3"
+        >
+          <button
+            class="btn btn-outline-secondary d-flex align-items-center justify-content-center w-100 flex-md-fill"
+          >
+            <img
+              src="../img/download.svg"
+              class="icon-download me-2"
+              alt=""
+              width="16px"
+            />
+            Download
+          </button>
+          <button
+            id="btnSign"
+            class="btn btn-secondary w-100 flex-md-fill"
+            disabled
+          >
+            Assinar
+          </button>
+        </div>
+      </section>
+
+      <!-- Assinaturas -->
+      <section class="signatures mb-4 text-center">
+        <p class="count mb-2">1/2 Assinaturas</p>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <label
+              class="d-flex align-items-center justify-content-center gap-2"
+            >
+              <!-- 1ª assinatura sempre marcada -->
+              <input
+                id="sig1"
+                class="sig-checkbox"
+                type="checkbox"
+                checked
+                disabled
+              />
+              <span class="status-dot"></span>
+              joedoe@gmail.com
+              <small class="text-muted ms-2">Assinar como contratado</small>
+            </label>
+          </li>
+          <li>
+            <label
+              class="d-flex align-items-center justify-content-center gap-2"
+            >
+              <!-- 2ª assinatura controla botão -->
+              <input id="sig2" class="sig-checkbox" type="checkbox" />
+              <span class="status-dot"></span>
+              fulano@gmail.com
+              <small class="text-muted ms-2">Assinar como contratante</small>
+            </label>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Preview -->
+      <section class="preview d-flex justify-content-center">
+        <div class="preview-box">
+          <button class="close-btn">&times;</button>
+          <div class="line title-line mb-2"></div>
+          <div class="line short-line mb-1"></div>
+          <div class="line full-line mb-1"></div>
+          <div class="line full-line mb-1"></div>
+          <div class="line footer-line mt-auto"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/sign-toggle.js" defer></script>
+  </body>
+</html>
