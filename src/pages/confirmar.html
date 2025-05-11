@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lets Sign – Verifique seu E-mail</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Seu CSS customizado -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+      <div class="container" style="max-width: 700px">
+        <!-- BRAND A ESQUERDA -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../img/Logo.svg" height="32" alt="Lets Sign" />
+        </a>
+
+        <!-- BOTÃO HAMBURGER -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- LINKS -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#suporte">Suporte</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container py-5">
+      <section class="verify-screen text-center">
+        <!-- TÍTULO -->
+        <h1 class="fw-semibold mb-2">
+          Quer <span class="text-success">Assinar?</span>
+        </h1>
+        <p class="text-muted mb-4">Verifique seu e-mail</p>
+
+        <!-- ILUSTRAÇÃO -->
+        <div class="mb-4">
+          <img
+            src="../img/corportate_memphis.jpg"
+            class="img-fluid mx-auto d-block"
+            style="max-width: 300px"
+            alt="Verifique seu e-mail"
+          />
+        </div>
+
+        <!-- EXPLICAÇÃO -->
+        <p class="mb-3">
+          Se alguém solicitou que você assinasse um documento,
+          <strong
+            >você recebeu o link para janela de assinatura em seu
+            e-mail.</strong
+          >
+        </p>
+
+        <!-- NÃO RECEBEU? -->
+        <h2 class="h5 fw-semibold mt-5 mb-3">Não recebeu?</h2>
+        <p class="mb-2">Confirme com a pessoa o seu e-mail.</p>
+        <p class="mb-2">
+          Outra possível solução é olhar sua caixa de spam ou pastas
+          automáticas.
+        </p>
+        <p>Caso os erros persistam, nos envie um tíquete.</p>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
