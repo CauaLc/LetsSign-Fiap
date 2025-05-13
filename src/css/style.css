@@ -63,6 +63,23 @@ h1 {
   background: #ccc;
 }
 
+
+.style-1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.2rem;
+}
+
+.style-2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+}
+
+.style-3 {
+  font-family: 'Satisfy', cursive;
+  font-size: 2rem;
+}
+
+
 .calendar-toggle {
   cursor: pointer;
 }
